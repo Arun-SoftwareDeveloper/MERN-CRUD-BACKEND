@@ -96,6 +96,9 @@ app.delete("/students/:roll", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Deployment from Backend!!!");
+});
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
